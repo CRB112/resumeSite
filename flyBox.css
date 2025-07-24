@@ -7,6 +7,20 @@
     text-align: left;
     flex: 1;
 }
+.split_box > div > div {
+  margin: 1%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 110%;
+  display: flex;
+  flex-direction:row;
+}
+.split_box > div > div > p{
+  flex: 1;
+  margin-top: .5%;
+  align-self: center;
+}
+
 
 
 @keyframes flyInLeft {

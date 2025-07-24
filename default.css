@@ -17,7 +17,7 @@ div {
 
 .defaultTitle {
     font-size: 215%;
-    border-bottom: 2px solid;
+    border-bottom: .1em solid;
     width: 40%; 
     border-bottom-right-radius: 7%;
     border-bottom-left-radius: 7%;

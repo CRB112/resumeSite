@@ -5,13 +5,10 @@
 .split_box > div {
     padding: 1%;
     text-align: left;
-    flex: 1;
 }
 .split_box > div > div {
   margin: 1%;
   text-align: center;
-  font-family: monospace;
-  font-size: 110%;
   display: flex;
   flex-direction:row;
 }

@@ -1,7 +1,6 @@
 
 .typedText {
   font-family: monospace;
-  white-space: pre;
   border-right: 1% solid black; 
   animation: blink 0.7s step-end infinite;
   color: white;    

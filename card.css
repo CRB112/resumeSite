@@ -1,0 +1,6 @@
+.jobCard {
+    margin: 16px;
+}
+.jobCard > h1 {
+    text-align: left;
+}

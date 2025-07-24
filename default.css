@@ -1,0 +1,26 @@
+
+div {
+    font-family: monospace;
+    font-size: 110%;
+}
+
+.defaultDiv {
+    display: flex;
+    flex-direction:column;
+    margin-top: 3%;
+    background-color: #6D6D69;
+    padding: 2%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.defaultTitle {
+    font-size: 215%;
+    border-bottom: 2px solid;
+    width: 40%; 
+    border-bottom-right-radius: 7%;
+    border-bottom-left-radius: 7%;
+    text-align: center;
+    margin: auto;
+}

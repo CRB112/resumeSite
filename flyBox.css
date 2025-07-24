@@ -1,0 +1,43 @@
+.split_box {
+    display: flex;
+    gap: 3%;
+}
+.split_box > div {
+    padding: 1%;
+    text-align: left;
+    flex: 1;
+}
+
+
+@keyframes flyInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes flyInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.fly-in-left {
+  animation: flyInLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.fly-in-right {
+  animation: flyInRight 1s ease forwards;
+  opacity: 0;
+}
+  

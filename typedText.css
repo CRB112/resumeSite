@@ -1,0 +1,14 @@
+
+.typedText {
+  font-family: monospace;
+  border-right: 2px solid black; 
+  animation: blink 0.7s step-end infinite;
+  padding-right:2px; 
+           
+}
+@keyframes blink {
+    from, to { border-right-color: transparent; }
+    50% { border-right-color: white; }
+  }
+
+  

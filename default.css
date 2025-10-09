@@ -1,0 +1,199 @@
+body {
+
+    color: white;
+    line-height:1.4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    background: linear-gradient(90deg,#2c2c2c 0%, #232e61 25%, #2c2c2c 50%, rgb(72, 66, 34) 75%, #2c2c2c 100%);
+    background-size: 400%;
+    animation: Gradient 15s ease infinite;
+    
+    justify-content: center;
+  }
+@keyframes Gradient {
+    0% {
+      background-position: 0 50%
+    }
+    50% {
+      background-position: 100% 50%
+    }
+    100% {
+      background-position: 0 50%
+    }
+  }
+
+.mainBlock {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #34363e;
+    border-radius: 4px;
+    margin:4vmin;
+    align-items: center;
+    padding: 2%;
+    border-color: rgb(144, 133, 68);
+    border-width: 4px;
+    border-style:solid
+}
+.titleBlock {
+    display: flex;
+    background-color: #474747;
+    width: 90%;
+    height: 10%;
+    font-size: 36px;
+    font-weight: bolder;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 4px;
+}
+.titleBlock > a {
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(144, 133, 68);
+}
+.contentBlock {
+  justify-self: stretch;
+  margin: 1.5%;
+  background-color: #474747;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  font-size: medium;
+  border-radius: 4px;
+  justify-content: center;
+  padding: 2%;
+  align-items: center;
+}
+.selectable {
+  background-color: rgb(28, 28, 68);
+  color: white;
+  border-color: rgb(50, 50, 100);
+  border-style:solid;
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: translateX(0);
+  will-change: transform;
+}
+.selectable:hover {
+  transform:scale(1.1);
+  cursor: pointer
+}
+.navButton {
+  display: grid;
+  grid-template-columns: 1fr 30% 1fr;
+  gap:2%;
+  height: 10vmin;
+  width: 70%;
+  margin: 1.5%;
+  border-radius: 10px;
+
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+.navButton > a {
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+.navButton > img {
+  justify-self: end;
+  align-self: center;
+  height: 50%;
+}
+.navBar {
+  display: flex;
+  padding: .8%;
+  width:50%;
+  height: 5vmin;
+  background-color: #474747;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.navTitle {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.navBarButton {
+  border-radius: 4px;
+  font-size: medium;
+  width: 20%;
+  height: 90%;
+  margin: 2%;
+}
+.imageText {
+  display:flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+}
+.imageText > img {
+  height: 35vmin;
+  margin-right: 10%;
+}
+.imageText > p {
+  width: 40vmax;
+  border-width: 2px 0 2px 0;
+  border-style:solid;
+  padding: 16px 0 16px 0;
+  border-color:rgb(144, 133, 68) 
+}
+.contactList {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactList > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.contactList > div > a {
+  display: grid;
+  text-align: center;
+  margin: 2%;
+}
+.gridDiv {
+  width: 80%;
+  display: grid;
+  grid-template-columns:44% 44%;
+  grid-template-rows: auto;
+  gap: 12%;
+}
+.gridDiv > div {
+  display: grid;
+  grid-template-columns: 25% 65%;
+  grid-template-rows: 20% 70%;
+  gap: 10%;
+  row-gap: 10%;
+  padding: 4%;
+  border-radius: 4px;
+  height: 25vmin;
+  border-radius: 10px;
+}
+.gridDiv > div:hover {
+  cursor:default
+}
+.gridDiv > div a {
+  display:block;
+  grid-column:2;
+  align-self:start;
+  height:100%;
+  width:100%;
+}
+.gridDiv > div > img {
+  display:flex;
+  width: 100%;
+  height:auto;
+  align-self: center;
+
+ grid-row: span 2;
+}

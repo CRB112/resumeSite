@@ -1,0 +1,27 @@
+.fR {
+animation: fRight 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.fL {
+animation: fLeft 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes fRight {
+    from {
+        transform: translateX(-200%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes fLeft {
+    from {
+        transform: translateX(200%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

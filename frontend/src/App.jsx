@@ -1,9 +1,12 @@
-function App() {
+import ParticleBackground from "./components/particles"
+import Hero from "./components/hero"
+
+export default function App() {
   return (
-    <div style={{ height: "100vh", display: "flex", justifyContent: "center", alignItems: "center" }}>
-      <h1>Hello, my portfolio starts here</h1>
-    </div>
+    <>
+      <ParticleBackground />
+      <Hero />
+
+    </>
   )
 }
-
-export default App

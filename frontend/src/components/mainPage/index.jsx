@@ -1,5 +1,11 @@
+import About from "./about"
+import Links from "./links"
+
 export default function Main() {
     return (
-        <div style={{marginTop: "80%", height: "100px"}}></div> 
+        <div style={{display:"flex", flexDirection:"row"}}>
+            <About />
+            <Links />
+        </div>
     )
 }

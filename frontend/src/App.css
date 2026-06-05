@@ -20,13 +20,13 @@
 
 .hero {
   position: relative;
-
-  .base,
-  .framework,
-  .vite {
-    inset-inline: 0;
-    margin: 0 auto;
-  }
+  background: transparent;
+  height: 100vh;
+  display: flex; flex-Direction: column; gap: 4px;
+  justify-Content: center; align-Items: center; pointer-Events: none;
+  z-Index: 1;
+  color: white; font-Size: 3rem; font-Weight: bold;
+}
 
   .base {
     width: 170px;
@@ -55,7 +55,7 @@
     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
       scale(0.8);
   }
-}
+
 
 #center {
   display: flex;

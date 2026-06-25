@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Project"
 import Education from "./pages/Education"
-import Experiences from "./pages/Experiences"
+import Experience from "./pages/Experience"
 
 export default function App() {
   return (
@@ -12,7 +12,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
         <Route path="/Education" element={<Education />} />
-        <Route path="/Experiences" element={<Experiences />} />
+        <Route path="/Experience" element={<Experience />} />
       </Routes>
     </BrowserRouter>
   );

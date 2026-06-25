@@ -4,8 +4,8 @@ export default function ExperienceButton() {
     const navigate = useNavigate();
     
     return (
-        <button className="mainButton" onClick={() => navigate("/Experiences")}>
-            Experiences
+        <button className="mainButton" onClick={() => navigate("/Experience")}>
+            Experience
         </button>
     )
 }

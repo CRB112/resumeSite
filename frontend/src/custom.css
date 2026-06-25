@@ -2,11 +2,25 @@
     display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;
     pointer-events: none;
     position: relative;
-    padding: 16px;
+    padding: 24px;
     margin: 64px;
     border-radius: 8px;
     background-color: rgba(50, 50, 50, 0.65);
 }
+.panel > h1 {
+    display: flex;
+    flex: 50px; flex-grow: 0; flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+}
+.panel > * {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .textBox {
     margin: 8px;
 }
@@ -16,5 +30,6 @@
     border-color: rgb(137, 137, 137);
     border-style: solid;
     width: 256px;
-    font-size: 1rem;
+    height: 28%;
+    font-size: 1.3rem;
 }

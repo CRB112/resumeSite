@@ -1,6 +1,14 @@
+import { useEffect} from 'react'
+
+import { setupBottomSlideInAnimation } from "../../animations/script"
+import "../../animations/slideInAndUp.css"
+
 export default function About() {
+    useEffect(() => {
+        setupBottomSlideInAnimation();
+    }, []);
     return (
-        <div className="panel">
+        <div className="panel slide-up" style={{flex:"1"}}>
             <h1>About me</h1>
             <p>
                 I am a software Engineer currently studying at Kent State university

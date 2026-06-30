@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
-import Projects from "./pages/Project"
-import Education from "./pages/Education"
-import Experience from "./pages/Experience"
+import Projects from "./pages/Projects/Project"
+import Education from "./pages/Education/Education"
+import Experience from "./pages/Experience/Experience"
 
 export default function App() {
   return (

@@ -5,19 +5,22 @@
     padding: 24px;
     margin: 64px;
     border-radius: 8px;
-    background-color: rgba(50, 50, 50, 0.65);
+    background-color: rgba(50, 50, 50, 0.85);
 }
 .panel > h1 {
     display: flex;
     flex: 50px; flex-grow: 0; flex-shrink: 0;
     align-items: center;
     justify-content: center;
+    border-bottom: solid;
+    border-radius: 4px;
+    border-color: rgba(95, 95, 95, 0.65)
 }
 .panel > * {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
 }
 

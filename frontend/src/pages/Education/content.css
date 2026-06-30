@@ -1,0 +1,49 @@
+.contentBox {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    align-items: stretch;
+    width:100%;
+}
+.contentBox > div {
+    padding: 16px;
+    margin: 0;
+    background-color: rgba(55, 45, 150, .65);;
+    display: flex;
+    flex: 1;
+}
+.contentBox > div > h2 {
+    height: 25px;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    font-weight: bold;
+    margin: 0;
+}
+
+.contentBox > div > div {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+    
+}
+
+.contentBox > div > div >div {
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+}
+.contentBox > div > div > div > div{
+    flex: 1;
+}
+.left {
+    font-weight: bold;
+    text-align: right;
+}
+.right {
+    text-align: left;
+}

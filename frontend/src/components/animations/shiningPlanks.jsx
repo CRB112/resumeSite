@@ -13,8 +13,8 @@ export default function ShiningPlanks({ options = {} }) {
       plankColor: 0x111128,
       shineColor: 0xffffff,
       shineWidth: .8,
-      waveDuration: 2.8,
-      waveDelay: 0.13,
+      waveDuration: 2.5,
+      waveDelay: 0.1,
       shimmerOpacity: 0.20,
       ...options,
     };

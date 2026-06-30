@@ -1,4 +1,6 @@
 import ShiningPlanks from "../../components/animations/shiningPlanks"
+import Content from "./content"
+
 
 export default function Experience() {
     return (
@@ -7,7 +9,7 @@ export default function Experience() {
                 <ShiningPlanks />
                 <div className="panel" style={{position:"relative"}}>
                     <h1>Experience</h1>
-                    <div></div>
+                    <Content />
                 </div>
             </div>
         </>

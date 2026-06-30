@@ -1,4 +1,5 @@
 import ShiningPlanks from "../../components/animations/shiningPlanks"
+import Content from "./content"
 
 export default function Projects() {
     return (
@@ -7,7 +8,7 @@ export default function Projects() {
                 <ShiningPlanks />
                 <div className="panel" style={{position:"relative"}}>
                     <h1>Projects</h1>
-                    <div></div>
+                    <Content />
                 </div>
             </div>
         </>

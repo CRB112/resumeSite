@@ -35,4 +35,5 @@
     width: 256px;
     height: 28%;
     font-size: 1.3rem;
+    pointer-events: auto;
 }

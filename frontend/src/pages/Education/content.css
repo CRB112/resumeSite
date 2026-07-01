@@ -16,7 +16,6 @@
 .contentBox > div > h2 {
     height: 25px;
     flex: 0 0 auto;
-    flex-shrink: 0;
     font-weight: bold;
     margin: 0;
 }

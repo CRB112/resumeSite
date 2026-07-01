@@ -1,0 +1,57 @@
+.carousel{
+    pointer-events: auto;
+    display: block;
+    justify-content: center;
+    gap: 32px;
+    width: 996px;
+
+    padding: 18px;
+
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    border:solid;
+    border-width: 4px;
+    border-radius: 4px;
+    border-color: rgb(59, 59, 59);
+}
+.carousel .track {
+    display: flex; flex-direction: row;
+    transition: transform 0.5s ease;
+    justify-content: start;
+}
+.carouselItem {
+    display: flex;flex: 0 0 306px; flex-direction: column;
+    width: 306px;
+    height: 375px;
+    margin: 8px;
+    padding: 8px;
+    background-color: rgba(55, 45, 150, .65);
+    border-radius: 8px;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+.carouselItem:hover {
+    transform: scale(1.05) translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+    z-index: 10;
+}
+.carouselItem > * {
+    padding: 8px;
+}
+.carouselItem > h2 {
+    flex: 0 0 auto;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+}
+.carouselItem > a {
+    flex: 0 0 auto;
+    text-align: center;
+}
+.carouselItem > p {
+    flex: 0 0 auto;
+}

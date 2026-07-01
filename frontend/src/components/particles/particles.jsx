@@ -17,7 +17,7 @@ function randomEdgePosition(viewport) {
   }
 }
 
-export default function Particles({ count = 1250 }) {
+export default function Particles({ count = 1500 }) {
   const points = useRef()
   const { mouse, viewport } = useThree()
 

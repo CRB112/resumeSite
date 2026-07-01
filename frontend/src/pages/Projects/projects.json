@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Portfolio",
+        "description": "A responsive personal resume website built with Node.js, showcasing my projects, skills, and experience through a modern and interactive interface. The site features dynamic components, including project displays and smooth UI interactions, designed to provide a clear and engaging overview of my work",
+        "link": "https://google.com" 
+    },
+    {
+        "title": "Spending-Saver",
+        "description": "This project analyzes user spending data and uses AI to classify purchases as essential vs non-essential, then calculates: Daily waste, Weekly / Monthly / Yearly projections, and Personalized financial insights",
+        "link": "https://github.com/Kent-Brogrammers/Spending-saver" 
+    },
+    {
+        "title": "School System Database",
+        "description": "Small prototype implementing full-stack web development including backend support through SQL database and frontend interaction. Used Flask to handle routing and API requests",
+        "link": "https://github.com/CRB112/DatabaseProject" 
+    },
+    {
+        "title": "AI Study",
+        "description": "Small project including multiple aspects of modern AI design. Most notably, used a neural network along with the IRIS dataset to train a network in predicting flower class based on properties of petals",
+        "link": "https://github.com/CRB112/AIProject/tree/main" 
+    }
+]

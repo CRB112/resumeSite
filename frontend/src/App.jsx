@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Projects from "./pages/Projects/Projects"
-import Education from "./pages/Education/Education"
+import Achievements  from "./pages/Achievements/Achievements"
 import Experience from "./pages/Experience/Experience"
 
 export default function App() {
@@ -11,7 +11,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
-        <Route path="/Education" element={<Education />} />
+        <Route path="/Achievements" element={<Achievements />} />
         <Route path="/Experience" element={<Experience />} />
       </Routes>
     </BrowserRouter>

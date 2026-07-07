@@ -1,5 +1,5 @@
 import ProjectsButton from "./buttons/ProjectButton"
-import EducationButton from "./buttons/EducationButton"
+import EducationButton from "./buttons/Achievements"
 import ExperienceButton from "./buttons/ExperienceButton"
 
 import { useEffect} from 'react'

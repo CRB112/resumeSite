@@ -6,7 +6,7 @@ import "../../components/animations/slideInAndUp.css"
 import Content from "./content"
 
 
-export default function Education() {
+export default function Achievements() {
     useEffect(() => {
             setupBottomSlideInAnimation();
         }, []);
@@ -14,7 +14,7 @@ export default function Education() {
         <div className="content">
             <ShiningPlanks />
             <div className="panel slide-up" style={{position:"relative"}}>
-                <h1>Education</h1>
+                <h1>Achievements</h1>
                 <Content />
             </div>
         </div>

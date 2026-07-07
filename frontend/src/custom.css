@@ -36,4 +36,7 @@
     height: 28%;
     font-size: 1.3rem;
     pointer-events: auto;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
 }

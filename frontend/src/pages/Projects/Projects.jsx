@@ -1,11 +1,18 @@
+import { useEffect} from 'react'
+
 import ShiningPlanks from "../../components/animations/shiningPlanks"
+import { setupBottomSlideInAnimation } from "../../components/animations/script"
+import "../../components/animations/slideInAndUp.css"
 import Content from "./content"
 
 export default function Projects() {
+    useEffect(() => {
+            setupBottomSlideInAnimation();
+        }, []);
     return (
         <div className="content">
             <ShiningPlanks />
-            <div className="panel" style={{position:"relative"}}>
+            <div className="panel slide-up" style={{position:"relative"}}>
                 <h1>Projects</h1>
                 <Content />
             </div>

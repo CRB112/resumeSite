@@ -14,7 +14,7 @@ export default function Experience() {
         <>
             <div className="content">
                 <ShiningPlanks />
-                <div className="panel slide-up" style={{position:"relative"}}>
+                <div className="panel pagePanel slide-up">
                     <h1>Experience</h1>
                     <Content />
                 </div>

@@ -1,48 +1,60 @@
-.contentBox {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 64px;
-    align-items: stretch;
-    width:100%;
-}
-.contentBox > div {
-    padding: 16px;
-    margin: 0;
-    background-color: rgba(55, 45, 150, .65);;
+@import "../page.css";
+
+.achievementsContent {
     display: flex;
-    flex: 1;
-}
-.contentBox > div > h2 {
-    height: 25px;
-    flex: 0 0 auto;
-    font-weight: bold;
-    margin: 0;
+    gap: 24px;
+    align-items: stretch;
 }
 
-.contentBox > div > div {
+.achievementsContent .panel {
+    flex: 1;
+}
+
+.achievementsContent .panel > * {
+    flex: 0 0 auto;
+}
+
+.achievementsContent .panelRight {
     display: flex;
     flex: 1;
     flex-direction: column;
-    width: 100%;
-    
+    gap: 24px;
 }
 
-.contentBox > div > div >div {
-    margin-bottom: 4px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.achievementsContent .title {
+    margin: 0 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.achievementsContent .infoRow {
+    display: grid;
+    grid-template-columns: minmax(8rem, 1fr) minmax(0, 1fr);
+    align-items: start;
     gap: 16px;
     width: 100%;
+    margin-bottom: 8px;
 }
-.contentBox > div > div > div > div{
-    flex: 1;
+
+.achievementsContent .infoRow > .left,
+.achievementsContent .infoRow > .right {
+    min-width: 0;
 }
-.left {
+
+.achievementsContent .left {
     font-weight: bold;
     text-align: right;
+    opacity: 0.85;
 }
-.right {
+
+.achievementsContent .right {
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .achievementsContent {
+        flex-direction: column;
+    }
 }

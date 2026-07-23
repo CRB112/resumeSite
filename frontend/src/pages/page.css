@@ -1,0 +1,72 @@
+:root {
+    --portfolio-surface: rgba(31, 32, 43, 0.78);
+    --portfolio-card: rgba(255, 255, 255, 0.06);
+    --portfolio-card-hover: rgba(255, 255, 255, 0.11);
+    --portfolio-border: rgba(192, 132, 252, 0.26);
+    --portfolio-accent: #c084fc;
+    --portfolio-shadow: 0 18px 48px rgba(0, 0, 0, 0.3);
+}
+
+.panel.pagePanel {
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    width: min(1180px, calc(100% - 32px));
+    margin: 40px auto;
+    padding: clamp(20px, 4vw, 40px);
+    background: linear-gradient(145deg, rgba(48, 43, 70, 0.9), var(--portfolio-surface));
+    border: 1px solid var(--portfolio-border);
+    border-radius: 20px;
+    box-shadow: var(--portfolio-shadow);
+    box-sizing: border-box;
+}
+
+.panel.pagePanel > h1 {
+    display: block;
+    flex: 0 0 auto;
+    margin: 0;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--portfolio-border);
+    color: var(--text-h);
+}
+
+.panel.pagePanel > *:not(h1) {
+    flex: 0 0 auto;
+}
+
+.pageContent {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.pageCard {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    min-width: 0;
+    padding: 22px 24px;
+    margin: 0;
+    pointer-events: auto;
+    background: var(--portfolio-card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.pageCard:hover {
+    transform: translateY(-2px);
+    background-color: var(--portfolio-card-hover);
+    border-color: var(--portfolio-border);
+}
+
+@media (max-width: 768px) {
+    .panel.pagePanel {
+        width: min(100% - 20px, 1180px);
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 16px;
+    }
+}

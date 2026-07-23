@@ -12,9 +12,13 @@
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.6.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "flowbite": "^4.0.2",
+    "postcss": "^8.5.22",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-router-dom": "^7.17.0",
+    "tailwindcss": "^4.3.3",
     "three": "^0.184.0"
   },
   "devDependencies": {

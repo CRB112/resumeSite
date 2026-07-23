@@ -3,6 +3,8 @@ import Carousel from "../../components/carousel/carousel"
 
 export default function Content() {
     return (
-            <Carousel />
+            <div className="pageContent projectsContent">
+                <Carousel />
+            </div>
     )
 }

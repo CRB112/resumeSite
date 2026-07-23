@@ -1,5 +1,6 @@
-.contentBox {
-    width: 100%;
-    align-items: stretch;
+@import "../page.css";
+
+.projectsContent {
+    display: flex;
     justify-content: center;
 }

@@ -1,20 +1,15 @@
 .carousel{
     pointer-events: auto;
     display: block;
-    justify-content: center;
-    gap: 32px;
-    width: 996px;
-
+    width: min(100%, 996px);
     padding: 18px;
-
-    align-items: center;
+    box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: visible;
-
-    border:solid;
-    border-width: 4px;
-    border-radius: 4px;
-    border-color: rgb(59, 59, 59);
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--portfolio-border);
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
 }
 .carousel .track {
     display: flex; flex-direction: row;
@@ -27,14 +22,17 @@
     height: 375px;
     margin: 8px;
     padding: 8px;
-    background-color: rgba(55, 45, 150, .65);
-    border-radius: 8px;
+    background: var(--portfolio-card);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;
     will-change: transform;
 }
 .carouselItem:hover {
     transform: scale(1.05) translateY(-6px);
+    background: var(--portfolio-card-hover);
+    border-color: var(--portfolio-border);
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
     z-index: 10;
 }
@@ -51,6 +49,8 @@
 .carouselItem > a {
     flex: 0 0 auto;
     text-align: center;
+    color: var(--portfolio-accent);
+    font-weight: 600;
 }
 .carouselItem > p {
     flex: 0 0 auto;

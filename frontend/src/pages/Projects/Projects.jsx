@@ -12,7 +12,7 @@ export default function Projects() {
     return (
         <div className="content">
             <ShiningPlanks />
-            <div className="panel slide-up" style={{position:"relative"}}>
+            <div className="panel pagePanel slide-up">
                 <h1>Projects</h1>
                 <Content />
             </div>

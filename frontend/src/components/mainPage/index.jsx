@@ -3,9 +3,9 @@ import Links from "./links"
 
 export default function Main() {
     return (
-        <div style={{display:"flex", flexDirection:"row"}}>
+        <main className="homeContent">
             <About />
             <Links />
-        </div>
+        </main>
     )
 }

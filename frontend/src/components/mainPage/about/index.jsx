@@ -5,10 +5,10 @@ import "../../animations/slideInAndUp.css"
 
 export default function About() {
     useEffect(() => {
-        setupBottomSlideInAnimation();
+        return setupBottomSlideInAnimation();
     }, []);
     return (
-        <div className="panel slide-up" style={{flex:"1"}}>
+        <section className="panel homePanel homeAbout slide-up">
             <h1>About me</h1>
             <p>
                 I am a software Engineer currently studying at Kent State university
@@ -18,6 +18,6 @@ export default function About() {
                 throughout my software career so far. My main language of choice is C++ due to
                 countless hours honing my technical skill.
             </p>
-        </div>
+        </section>
     )
 }

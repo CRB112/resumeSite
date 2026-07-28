@@ -8,16 +8,16 @@ import "../../animations/slideInAndUp.css"
 
 
 export default function Links() {
-    useEffect(() => {setupBottomSlideInAnimation();}, []);
+    useEffect(() => setupBottomSlideInAnimation(), []);
     
     return (
-        <div className="panel slide-up" style={{flex:"1",}}>
+        <section className="panel homePanel homeLinks slide-up">
             <h1>More Info</h1>
                 <div>
                     <ProjectsButton />
                     <EducationButton />
                     <ExperienceButton />
                 </div>
-        </div>
+        </section>
     )
 }

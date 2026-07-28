@@ -5,8 +5,15 @@
     margin: 0 auto;
 }
 
+.experienceEntry {
+    width: 100%;
+}
+
 .experienceToggle {
-    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
     padding: 10px 18px;
     color: #fff;
     font: inherit;
@@ -23,8 +30,17 @@
     transform: translateY(-1px);
 }
 
+.experienceDates {
+    display: block;
+    margin-top: 2px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.82rem;
+    font-weight: 500;
+}
+
 .experienceMenu {
-    width: min(100%, 320px);
+    width: 100%;
+    box-sizing: border-box;
     padding: 12px 16px;
     background: rgba(17, 18, 27, 0.72);
     border: 1px solid var(--portfolio-border);
@@ -33,12 +49,12 @@
 
 .experienceMenu ul {
     display: grid;
-    gap: 8px;
-    padding: 0;
+    gap: 10px;
     margin: 0;
-    list-style: none;
+    padding-left: 20px;
 }
 
-.experienceMenu a {
-    color: var(--text-h);
+.experienceMenu li {
+    text-indent: 0;
+    line-height: 1.6;
 }

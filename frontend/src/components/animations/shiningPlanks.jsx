@@ -113,5 +113,5 @@ export default function ShiningPlanks({ options = {} }) {
     };
   }, []);
 
-  return <div ref={mountRef} style={{ position: "absolute", inset: 0 }} />;
+  return <div ref={mountRef} style={{ position: "fixed", inset: 0 }} />;
 }

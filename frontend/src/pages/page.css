@@ -1,3 +1,5 @@
+@import "./contentPages.css";
+
 :root {
     --portfolio-surface: rgba(31, 32, 43, 0.78);
     --portfolio-card: rgba(255, 255, 255, 0.06);
@@ -8,25 +10,74 @@
 }
 
 .panel.pagePanel {
+    z-index: 1;
     align-items: stretch;
     justify-content: flex-start;
     gap: 24px;
-    width: min(1180px, calc(100% - 32px));
-    margin: 40px auto;
+    width: min(1180px, 100%);
+    margin: 0;
     padding: clamp(20px, 4vw, 40px);
     background: linear-gradient(145deg, rgba(48, 43, 70, 0.9), var(--portfolio-surface));
     border: 1px solid var(--portfolio-border);
     border-radius: 20px;
     box-shadow: var(--portfolio-shadow);
     box-sizing: border-box;
+    animation: pageSurfacePulse 7s ease-in-out infinite;
 }
 
-.panel.pagePanel > h1 {
-    display: block;
-    flex: 0 0 auto;
-    margin: 0;
+.panel.pagePanel > .pageHeader {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     padding-bottom: 14px;
     border-bottom: 1px solid var(--portfolio-border);
+    pointer-events: auto;
+}
+
+.pageHeader::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--portfolio-accent), transparent 75%);
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.panel.pagePanel.slide-up.visible .pageHeader::after {
+    animation: headerAccentReveal 0.7s 0.18s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.homeButton {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 14px;
+    color: var(--text-h);
+    font-weight: 600;
+    text-decoration: none;
+    background: rgba(31, 32, 43, 0.78);
+    border: 1px solid var(--portfolio-border);
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.homeButton:hover {
+    background-color: var(--portfolio-card-hover);
+    border-color: var(--portfolio-accent);
+    transform: translateY(-1px);
+}
+
+.pageHeader h1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
     color: var(--text-h);
 }
 
@@ -53,20 +104,88 @@
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 14px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
-    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+    transition: transform 0.25s ease, background-color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .pageCard:hover {
     transform: translateY(-2px);
     background-color: var(--portfolio-card-hover);
     border-color: var(--portfolio-border);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+}
+
+.contactDetails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 8px;
+    padding-top: 18px;
+    border-top: 1px solid var(--portfolio-border);
+    pointer-events: auto;
+}
+
+.contactDetails p {
+    text-indent: 0;
+}
+
+.contactDetails a {
+    color: var(--portfolio-accent);
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, text-underline-offset 0.2s ease;
+}
+
+.contactDetails a:hover {
+    color: #e9d5ff;
+    text-underline-offset: 6px;
+}
+
+.panel.pagePanel.slide-up.visible .pageContent {
+    animation: contentReveal 0.55s 0.15s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+.panel.pagePanel.slide-up.visible .contactDetails {
+    animation: contentReveal 0.5s 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+
+@keyframes pageSurfacePulse {
+    0%, 100% { box-shadow: 0 18px 48px rgba(0, 0, 0, 0.3); }
+    50% { box-shadow: 0 22px 58px rgba(109, 68, 187, 0.22), 0 18px 48px rgba(0, 0, 0, 0.28); }
+}
+
+@keyframes headerAccentReveal {
+    to { transform: scaleX(1); }
+}
+
+@keyframes contentReveal {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @media (max-width: 768px) {
     .panel.pagePanel {
-        width: min(100% - 20px, 1180px);
-        margin: 20px auto;
         padding: 20px;
         border-radius: 16px;
+    }
+
+    .panel.pagePanel > .pageHeader {
+        align-items: flex-start;
+    }
+
+    .contactDetails {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .panel.pagePanel,
+    .panel.pagePanel.slide-up.visible .pageHeader::after,
+    .panel.pagePanel.slide-up.visible .pageContent,
+    .panel.pagePanel.slide-up.visible .contactDetails {
+        animation: none;
     }
 }

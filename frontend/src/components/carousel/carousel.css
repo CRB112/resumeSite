@@ -6,8 +6,8 @@
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: visible;
-    background: rgba(255, 255, 255, 0.035);
-    border: 1px solid var(--portfolio-border);
+    background: linear-gradient(145deg, rgba(8, 10, 19, 0.88), rgba(35, 31, 53, 0.8));
+    border: 1px solid rgba(216, 180, 254, 0.24);
     border-radius: 14px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
 }
@@ -22,8 +22,8 @@
     height: 375px;
     margin: 8px;
     padding: 8px;
-    background: var(--portfolio-card);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: linear-gradient(145deg, rgba(73, 62, 108, 0.48), rgba(29, 31, 48, 0.9));
+    border: 1px solid rgba(216, 180, 254, 0.22);
     border-radius: 12px;
 
     transition: transform 0.25s ease, box-shadow 0.25s ease;

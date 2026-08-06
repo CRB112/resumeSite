@@ -2,6 +2,7 @@
 
 .achievementsContent {
     display: flex;
+    justify-content: center;
     gap: 24px;
     align-items: stretch;
 }
@@ -58,3 +59,4 @@
         flex-direction: column;
     }
 }
+

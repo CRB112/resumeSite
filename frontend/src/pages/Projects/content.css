@@ -1,7 +1,11 @@
 @import "../page.css";
 
-.projectsContent {
-    display: flex;
-    justify-content: center;
-}
-
+.projectsIntro { margin-bottom: 24px; line-height: 1.7; }
+.projectGrid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.projectCard h2 { margin: 0; line-height: 1.3; }
+.projectCard p { line-height: 1.7; }
+.projectStack { color: #d8b4fe; font-size: 0.85rem; }
+.projectCard a { align-self: flex-start; margin-top: auto; padding-top: 8px; color: #d8b4fe; font-weight: 600; text-underline-offset: 4px; }
+.projectCard a:hover { color: #faf5ff; }
+@media (max-width: 768px) { .projectGrid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 480px) { .projectCard { padding: 18px; } .projectsContent { padding: 12px; } }

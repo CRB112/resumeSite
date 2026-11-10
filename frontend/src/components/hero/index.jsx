@@ -6,7 +6,7 @@ export default function Hero() {
             <div className="textBox">
                 Connor Banning
             </div>
-            <div className="textBox" style={{fontSize: "1.5rem", color: "rgba(55, 45, 150, .65)"}}>
+            <div className="textBox heroSubtitle">
                 Software Engineer
             </div>
         </div>

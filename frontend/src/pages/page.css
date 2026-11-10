@@ -177,6 +177,7 @@
     }
 
     .panel.pagePanel > .pageHeader {
+        flex-wrap: wrap;
         align-items: flex-start;
     }
 

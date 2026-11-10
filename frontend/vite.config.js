@@ -10,5 +10,6 @@ export default defineConfig({
     outDir: fileURLToPath(new URL('./dist', import.meta.url)),
     emptyOutDir: true,
   },
+  css: { postcss: fileURLToPath(new URL('.', import.meta.url)) },
   plugins: [react()],
 })

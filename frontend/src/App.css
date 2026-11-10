@@ -21,11 +21,13 @@
 .hero {
   position: relative;
   background: transparent;
-  height: 100vh;
+  min-height: 100svh;
+  padding: 48px 24px;
+  text-align: center;
   display: flex; flex-Direction: column; gap: 4px;
   justify-Content: center; align-Items: center; pointer-Events: none;
   z-Index: 1;
-  color: white; font-Size: 3rem; font-Weight: bold;
+  color: white; font-size: clamp(2rem, 7vw, 3.5rem); font-Weight: bold;
 }
 
   .base {
@@ -183,3 +185,5 @@
     border-right-color: var(--border);
   }
 }
+
+.heroSubtitle { font-size: clamp(1.1rem, 4vw, 1.5rem); color: #d8b4fe; }

@@ -60,3 +60,8 @@
     }
 }
 
+
+@media (max-width: 480px) {
+    .achievementsContent .infoRow { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+    .achievementsContent .left { text-align: left; }
+}

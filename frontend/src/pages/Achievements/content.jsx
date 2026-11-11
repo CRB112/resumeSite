@@ -34,7 +34,11 @@ export default function Content() {
 
             <div className="panelRight">
                 <div className="panel pageCard">
-                    <h2 className="title">Hackathon</h2>
+                    <h2 className="title">Hackathons</h2>
+                    <div className="infoRow">
+                        <div className="left">Start State Halloween Hackathon 2026</div>
+                        <div className="right">Overall winner</div>
+                    </div>
                     <div className="infoRow">
                         <div className="left">Kent Hack Enough 2026</div>
                         <div className="right">SnowFlake API winner</div>

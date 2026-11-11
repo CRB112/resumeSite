@@ -1,21 +1,27 @@
 [
   {
+    "title": "SWE-MAIN (Rocky Homework Platform)",
+    "description": "Built by a Scrum team, SWE-MAIN helps professors manage classes and short-answer assignments. Students submit homework, receive AI-generated scores and feedback through Rocky, and review their submission history.",
+    "link": "https://github.com/Epsilon-Elephants/SWE-MAIN",
+    "stack": "Python \u00b7 Streamlit \u00b7 MongoDB"
+  },
+  {
+    "title": "Q-Atlas",
+    "description": "A quantum computing project that compares quantum algorithms with classical methods. It includes a Python-to-QUBO compiler, QAOA optimization, Grover search, and spin-system experiments.",
+    "link": "https://github.com/Kent-Brogrammers/Q-Atlas",
+    "stack": "Quantum computing \u00b7 Qiskit \u00b7 Python \u00b7 SvelteKit"
+  },
+  {
     "title": "ExitZero",
     "description": "A team-built evacuation simulator with a floor-plan editor, live playback, and analytics. My work focuses on deterministic spawning, continuous navigation, collisions, and simulation metrics.",
     "link": "https://github.com/Kent-Brogrammers/ExitZero",
-    "stack": "Rust \u00b7 React \u00b7 TypeScript"
+    "stack": "Rust \u00b7 Axum \u00b7 React \u00b7 TypeScript"
   },
   {
     "title": "Email Sifting Agent",
     "description": "A desktop app that organizes Microsoft and Gmail inboxes with configurable rules. Supports background processing, progress reporting, cancellation, and an offline rule simulator.",
     "link": "https://github.com/CRB112/Email-Agent",
     "stack": "Python \u00b7 Gmail API \u00b7 Microsoft Graph"
-  },
-  {
-    "title": "Rocky Homework Platform",
-    "description": "A team project for professor-managed classes and short-answer homework. Students submit answers, receive AI-generated scores and feedback, and review their submission history.",
-    "link": "https://github.com/Epsilon-Elephants/SWE-MAIN",
-    "stack": "Python \u00b7 Streamlit \u00b7 MongoDB"
   },
   {
     "title": "KSU VEX Robotics Website",

@@ -1,4 +1,4 @@
-import { useEffect} from 'react'
+import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 import ShiningPlanks from "../../components/animations/shiningPlanks"
@@ -8,13 +8,11 @@ import Content from "./content"
 import ContactDetails from "../../components/ContactDetails"
 
 export default function Projects() {
-    useEffect(() => {
-            setupBottomSlideInAnimation();
-        }, []);
+    useEffect(() => setupBottomSlideInAnimation(), [])
     return (
-        <div className="content">
+        <div className="content projectsPage">
             <ShiningPlanks />
-            <div className="panel pagePanel slide-up">
+            <div className="panel pagePanel projectsPanel slide-up">
                 <header className="pageHeader">
                     <h1>Projects</h1>
                     <Link className="homeButton" to="/">← Home</Link>

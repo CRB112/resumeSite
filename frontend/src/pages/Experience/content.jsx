@@ -5,7 +5,7 @@ export default function Content() {
     const [openRole, setOpenRole] = useState(null)
     const roles = [
         {
-            title: "Lead Aquatic Supervisor",
+            title: "Lead Aquatics Supervisor",
             dates: "2024 - Present",
             bullets: [
                 "Lead aquatic safety planning and daily operations for a lifeguard team in a high-traffic recreational environment.",
@@ -14,12 +14,10 @@ export default function Content() {
             ]
         },
         {
-            title: "Lifeguard Instructor",
-            dates: "2023 - Present",
+            title: "Computer Science Tutor",
+            dates: "August 2026 – Present",
             bullets: [
-                "Deliver lifeguard instruction covering water safety, surveillance, rescue techniques, first aid, and emergency response procedures.",
-                "Evaluate participant performance and provide clear, individualized feedback to build confidence and readiness in high-pressure situations.",
-                "Maintain an organized, inclusive training environment while reinforcing certification standards and risk-management best practices."
+                "Tutor students through Kent State University's Department of Computer Science, helping them work through programming concepts and coursework."
             ]
         }
     ]
